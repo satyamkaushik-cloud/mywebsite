@@ -35,36 +35,37 @@
 <body class="bg-white text-gray-900">
 
   <!-- HEADER -->
-  <header id="main-header" class="fixed top-0 left-0 right-0 bg-white z-50 transition-all duration-200">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-  <div class="flex items-center justify-between h-20">
-    <button onclick="scrollToSection('home')" class="flex items-center gap-3 hover:opacity-90 transition-opacity">
-    <img src="logo.png" alt="ICT IConnect TranspoLink" class="h-14 w-auto" />
-    </button>
-    <nav class="hidden md:flex items-center gap-8" id="desktop-nav">
-    <button onclick="scrollToSection('home')"    class="nav-link font-medium text-gray-700 hover:text-blue-600 transition-colors" data-section="home">Home</button>
-    <button onclick="scrollToSection('about')"   class="nav-link font-medium text-gray-700 hover:text-blue-600 transition-colors" data-section="about">About</button>
-    <button onclick="scrollToSection('services')" class="nav-link font-medium text-gray-700 hover:text-blue-600 transition-colors" data-section="services">Services</button>
-    <button onclick="scrollToSection('team')"    class="nav-link font-medium text-gray-700 hover:text-blue-600 transition-colors" data-section="team">Team</button>
-    <button onclick="scrollToSection('contact')" class="nav-link font-medium text-gray-700 hover:text-blue-600 transition-colors" data-section="contact">Contact Us</button>
-    </nav>
-    <button id="hamburger" onclick="toggleMenu()" class="md:hidden p-2 rounded-lg hover:bg-gray-100 text-gray-700">
-    <svg id="icon-menu" xmlns="http://w3.org" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
-    <svg id="icon-x" xmlns="http://w3.org" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
-    </button>
-  </div>
-  <!-- Notice the 'hidden' class added here so it toggles correctly -->
-  <div id="mobile-menu" class="hidden md:hidden py-4 border-t">
-    <nav class="flex flex-col gap-4">
-    <button onclick="scrollToSection('home');toggleMenu()"    class="nav-link text-left font-medium text-gray-700 hover:text-blue-600 transition-colors" data-section="home">Home</button>
-    <button onclick="scrollToSection('about');toggleMenu()"   class="nav-link text-left font-medium text-gray-700 hover:text-blue-600 transition-colors" data-section="about">About</button>
-    <button onclick="scrollToSection('services');toggleMenu()" class="nav-link text-left font-medium text-gray-700 hover:text-blue-600 transition-colors" data-section="services">Services</button>
-    <button onclick="scrollToSection('team');toggleMenu()"    class="nav-link text-left font-medium text-gray-700 hover:text-blue-600 transition-colors" data-section="team">Team</button>
-    <button onclick="scrollToSection('contact');toggleMenu()" class="nav-link text-left font-medium text-gray-700 hover:text-blue-600 transition-colors" data-section="contact">Contact Us</button>
-    </nav>
-  </div>
-  </div>
-  </header>
+	<header id="main-header" class="fixed top-0 left-0 right-0 bg-white z-50 transition-all duration-200">
+	<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+	<div class="flex items-center justify-between h-20">
+	  <button onclick="scrollToSection('home')" class="flex items-center gap-3 hover:opacity-90 transition-opacity">
+		<img src="logo.png" alt="ICT IConnect TranspoLink" class="h-14 w-auto" />
+	  </button>
+	  <nav class="hidden md:flex items-center gap-8" id="desktop-nav">
+		<button onclick="scrollToSection('home')"    class="nav-link font-medium text-gray-700 hover:text-blue-600 transition-colors" data-section="home">Home</button>
+		<button onclick="scrollToSection('about')"   class="nav-link font-medium text-gray-700 hover:text-blue-600 transition-colors" data-section="about">About</button>
+		<button onclick="scrollToSection('services')" class="nav-link font-medium text-gray-700 hover:text-blue-600 transition-colors" data-section="services">Services</button>
+		<button onclick="scrollToSection('team')"    class="nav-link font-medium text-gray-700 hover:text-blue-600 transition-colors" data-section="team">Team</button>
+		<button onclick="scrollToSection('contact')" class="nav-link font-medium text-gray-700 hover:text-blue-600 transition-colors" data-section="contact">Contact Us</button>
+	  </nav>
+	  <button id="hamburger" onclick="toggleMenu()" class="md:hidden p-2 rounded-lg hover:bg-gray-100 text-gray-700">
+		<svg id="icon-menu" xmlns="http://w3.org" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+		<svg id="icon-x" xmlns="http://w3.org" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+	  </button>
+	</div>
+	<!-- Notice the 'hidden' class added here so it toggles correctly -->
+	<div id="mobile-menu" class="hidden md:hidden py-4 border-t">
+	  <nav class="flex flex-col gap-4">
+		<button onclick="scrollToSection('home');toggleMenu()"    class="nav-link text-left font-medium text-gray-700 hover:text-blue-600 transition-colors" data-section="home">Home</button>
+		<button onclick="scrollToSection('about');toggleMenu()"   class="nav-link text-left font-medium text-gray-700 hover:text-blue-600 transition-colors" data-section="about">About</button>
+		<button onclick="scrollToSection('services');toggleMenu()" class="nav-link text-left font-medium text-gray-700 hover:text-blue-600 transition-colors" data-section="services">Services</button>
+		<button onclick="scrollToSection('team');toggleMenu()"    class="nav-link text-left font-medium text-gray-700 hover:text-blue-600 transition-colors" data-section="team">Team</button>
+		<button onclick="scrollToSection('contact');toggleMenu()" class="nav-link text-left font-medium text-gray-700 hover:text-blue-600 transition-colors" data-section="contact">Contact Us</button>
+	  </nav>
+	</div>
+	</div>
+	</header>
+
   <main>
 
     <!-- HERO -->
@@ -285,7 +286,7 @@
           </div>
         </div>
         <div class="mt-16 grid md:grid-cols-4 gap-6">
-          <div class="bg-white p-6 rounded-xl text-center shadow-md"><p class="text-3xl font-bold text-blue-600 mb-2">20+</p><p class="text-gray-600">Years Combined Experience</p></div>
+          <div class="bg-white p-6 rounded-xl text-center shadow-md"><p class="text-3xl font-bold text-blue-600 mb-2">50+</p><p class="text-gray-600">Years Combined Experience</p></div>
           <div class="bg-white p-6 rounded-xl text-center shadow-md"><p class="text-3xl font-bold text-blue-600 mb-2">500+</p><p class="text-gray-600">Successful Projects</p></div>
           <div class="bg-white p-6 rounded-xl text-center shadow-md"><p class="text-3xl font-bold text-blue-600 mb-2">98%</p><p class="text-gray-600">Client Satisfaction</p></div>
           <div class="bg-white p-6 rounded-xl text-center shadow-md"><p class="text-3xl font-bold text-blue-600 mb-2">24/7</p><p class="text-gray-600">Support Available</p></div>
