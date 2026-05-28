@@ -35,36 +35,36 @@
 <body class="bg-white text-gray-900">
 
   <!-- HEADER -->
-  <header id="main-header" class="fixed top-0 left-0 right-0 bg-white z-50 transition-shadow duration-200">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex items-center justify-between h-20">
-        <button onclick="scrollTo('home')" class="flex items-center gap-3 hover:opacity-90 transition-opacity">
-          <img src="logo.png" alt="ICT IConnect TranspoLink" class="h-14 w-auto" />
-        </button>
-        <nav class="hidden md:flex items-center gap-8" id="desktop-nav">
-          <button onclick="scrollTo('home')"    class="nav-link font-medium text-gray-700 hover:text-blue-600 transition-colors" data-section="home">Home</button>
-          <button onclick="scrollTo('about')"   class="nav-link font-medium text-gray-700 hover:text-blue-600 transition-colors" data-section="about">About</button>
-          <button onclick="scrollTo('services')" class="nav-link font-medium text-gray-700 hover:text-blue-600 transition-colors" data-section="services">Services</button>
-          <button onclick="scrollTo('team')"    class="nav-link font-medium text-gray-700 hover:text-blue-600 transition-colors" data-section="team">Team</button>
-          <button onclick="scrollTo('contact')" class="nav-link font-medium text-gray-700 hover:text-blue-600 transition-colors" data-section="contact">Contact Us</button>
-        </nav>
-        <button id="hamburger" onclick="toggleMenu()" class="md:hidden p-2 rounded-lg hover:bg-gray-100 text-gray-700">
-          <svg id="icon-menu" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
-          <svg id="icon-x" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
-        </button>
-      </div>
-      <div id="mobile-menu" class="md:hidden py-4 border-t">
-        <nav class="flex flex-col gap-4">
-          <button onclick="scrollTo('home');toggleMenu()"    class="nav-link text-left font-medium text-gray-700 hover:text-blue-600 transition-colors" data-section="home">Home</button>
-          <button onclick="scrollTo('about');toggleMenu()"   class="nav-link text-left font-medium text-gray-700 hover:text-blue-600 transition-colors" data-section="about">About</button>
-          <button onclick="scrollTo('services');toggleMenu()" class="nav-link text-left font-medium text-gray-700 hover:text-blue-600 transition-colors" data-section="services">Services</button>
-          <button onclick="scrollTo('team');toggleMenu()"    class="nav-link text-left font-medium text-gray-700 hover:text-blue-600 transition-colors" data-section="team">Team</button>
-          <button onclick="scrollTo('contact');toggleMenu()" class="nav-link text-left font-medium text-gray-700 hover:text-blue-600 transition-colors" data-section="contact">Contact Us</button>
-        </nav>
-      </div>
-    </div>
+  <header id="main-header" class="fixed top-0 left-0 right-0 bg-white z-50 transition-all duration-200">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+  <div class="flex items-center justify-between h-20">
+    <button onclick="scrollToSection('home')" class="flex items-center gap-3 hover:opacity-90 transition-opacity">
+    <img src="logo.png" alt="ICT IConnect TranspoLink" class="h-14 w-auto" />
+    </button>
+    <nav class="hidden md:flex items-center gap-8" id="desktop-nav">
+    <button onclick="scrollToSection('home')"    class="nav-link font-medium text-gray-700 hover:text-blue-600 transition-colors" data-section="home">Home</button>
+    <button onclick="scrollToSection('about')"   class="nav-link font-medium text-gray-700 hover:text-blue-600 transition-colors" data-section="about">About</button>
+    <button onclick="scrollToSection('services')" class="nav-link font-medium text-gray-700 hover:text-blue-600 transition-colors" data-section="services">Services</button>
+    <button onclick="scrollToSection('team')"    class="nav-link font-medium text-gray-700 hover:text-blue-600 transition-colors" data-section="team">Team</button>
+    <button onclick="scrollToSection('contact')" class="nav-link font-medium text-gray-700 hover:text-blue-600 transition-colors" data-section="contact">Contact Us</button>
+    </nav>
+    <button id="hamburger" onclick="toggleMenu()" class="md:hidden p-2 rounded-lg hover:bg-gray-100 text-gray-700">
+    <svg id="icon-menu" xmlns="http://w3.org" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    <svg id="icon-x" xmlns="http://w3.org" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+  </div>
+  <!-- Notice the 'hidden' class added here so it toggles correctly -->
+  <div id="mobile-menu" class="hidden md:hidden py-4 border-t">
+    <nav class="flex flex-col gap-4">
+    <button onclick="scrollToSection('home');toggleMenu()"    class="nav-link text-left font-medium text-gray-700 hover:text-blue-600 transition-colors" data-section="home">Home</button>
+    <button onclick="scrollToSection('about');toggleMenu()"   class="nav-link text-left font-medium text-gray-700 hover:text-blue-600 transition-colors" data-section="about">About</button>
+    <button onclick="scrollToSection('services');toggleMenu()" class="nav-link text-left font-medium text-gray-700 hover:text-blue-600 transition-colors" data-section="services">Services</button>
+    <button onclick="scrollToSection('team');toggleMenu()"    class="nav-link text-left font-medium text-gray-700 hover:text-blue-600 transition-colors" data-section="team">Team</button>
+    <button onclick="scrollToSection('contact');toggleMenu()" class="nav-link text-left font-medium text-gray-700 hover:text-blue-600 transition-colors" data-section="contact">Contact Us</button>
+    </nav>
+  </div>
+  </div>
   </header>
-
   <main>
 
     <!-- HERO -->
@@ -393,38 +393,73 @@
     </div>
   </footer>
 
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
+ <script>
+  // Set copyright year safely
+  window.addEventListener('DOMContentLoaded', () => {
+    const yearElement = document.getElementById('year');
+    if (yearElement) yearElement.textContent = new Date().getFullYear();
+  });
 
-    function scrollTo(id) {
-      const el = document.getElementById(id);
-      if (el) el.scrollIntoView({ behavior: 'smooth' });
-    }
+  // Mobile menu open/close toggle system
+  function toggleMenu() {
+    const menu = document.getElementById('mobile-menu');
+    const iconMenu = document.getElementById('icon-menu');
+    const iconX = document.getElementById('icon-x');
+    
+    if (!menu || !iconMenu || !iconX) return;
 
-    function toggleMenu() {
-      const menu = document.getElementById('mobile-menu');
-      const iconMenu = document.getElementById('icon-menu');
-      const iconX = document.getElementById('icon-x');
-      const isOpen = menu.classList.toggle('open');
-      iconMenu.style.display = isOpen ? 'none' : 'block';
-      iconX.style.display = isOpen ? 'block' : 'none';
-    }
+    const isHidden = menu.classList.toggle('hidden');
+    iconMenu.style.display = isHidden ? 'block' : 'none';
+    iconX.style.display = isHidden ? 'none' : 'block';
+  }
 
-    window.addEventListener('scroll', () => {
-      const header = document.getElementById('main-header');
-      header.classList.toggle('scrolled', window.scrollY > 10);
-      const sections = ['home', 'about', 'services', 'team', 'contact'];
-      const scrollPos = window.scrollY + 100;
-      let current = 'home';
-      for (const id of sections) {
-        const el = document.getElementById(id);
-        if (el && scrollPos >= el.offsetTop) current = id;
-      }
-      document.querySelectorAll('.nav-link').forEach(link => {
-        link.classList.toggle('active', link.dataset.section === current);
+  // Smooth scroll offset controller (Prevents content hiding under header)
+  function scrollToSection(id) {
+    const targetElement = document.getElementById(id);
+    if (targetElement) {
+      const headerOffset = 80; // height of your h-20 header
+      const elementPosition = targetElement.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.scrollY - headerOffset;
+      
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
       });
+    } else {
+      console.warn(`Target section ID "${id}" was not found in the HTML document.`);
+    }
+  }
+
+  // Window scroll event listener for background shadows and active tracking
+  window.addEventListener('scroll', () => {
+    const header = document.getElementById('main-header');
+    if (header) {
+      header.classList.toggle('shadow-md', window.scrollY > 10);
+    }
+    
+    const sections = ['home', 'about', 'services', 'team', 'contact'];
+    const scrollPos = window.scrollY + 120; // Trigger trigger position
+    let currentSection = 'home';
+    
+    for (const id of sections) {
+      const el = document.getElementById(id);
+      if (el && scrollPos >= el.offsetTop) {
+        currentSection = id;
+      }
+    }
+    
+    document.querySelectorAll('.nav-link').forEach(link => {
+      if (link.dataset.section === currentSection) {
+        link.classList.add('text-blue-600', 'font-semibold');
+        link.classList.remove('text-gray-700');
+      } else {
+        link.classList.remove('text-blue-600', 'font-semibold');
+        link.classList.add('text-gray-700');
+      }
     });
-  </script>
+  });
+</script>
+
 
 </body>
 </html>
